@@ -26,6 +26,9 @@
       "plugin:prettier/recommended"
     ]
   },
+  "prettier": {
+    "endOfLine": "auto"
+  },
   "browserslist": {
     "production": [
       ">0.2%",
