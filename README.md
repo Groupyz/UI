@@ -1,4 +1,6 @@
-# Run app using Docker Compose:
+# Run app:
+
+## With Docker Compose:
 
 1. Build images
    using the following CLI command when in directory containing the Dockerfile:
@@ -26,6 +28,15 @@
 
      alternetvly, go to Docker Desktop app & check if containers are running.
 
+## On local machine:
+
+1. Enter 'groupyz' dir in terminal
+
+2. Run the following command:
+    ```bash
+     npm start
+    ```
+
 # Related:
 
-1. [Figma](https://www.figma.com/file/ruvGu8XDLHK6gOhztOv8pY/Groupy?type=design&node-id=0-1)
+ [Figma](https://www.figma.com/file/ruvGu8XDLHK6gOhztOv8pY/Groupy?type=design&node-id=0-1)
