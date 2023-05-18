@@ -9,15 +9,9 @@ const Button_c = ({ name, dest }) => {
     throw new Error("The requiredProp is missing!");
   }
 
-  function goToDest(dest) {
-    console.log(dest);
-    if (!dest) {
-      showToastMessage();
-    }
-  }
-
   const showToastMessage = () => {
-    toast.error("Error Notification !", {
+    console.log(dest);
+    toast.error("Not Supported!", {
       position: toast.POSITION.TOP_CENTER,
     });
   };
@@ -28,7 +22,7 @@ const Button_c = ({ name, dest }) => {
         href="#text-buttons"
         variant="contained"
         id="Button_c"
-        onClick={goToDest(dest)}
+        onClick={showToastMessage}
       >
         {name}
       </Button>
