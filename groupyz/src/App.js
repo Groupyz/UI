@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="App">
       <header /> Hello World!
-      <Button_c name="Get Started"></Button_c>
+      <Button_c name="Get Started" dest="ok"></Button_c>
     </div>
   );
 }
