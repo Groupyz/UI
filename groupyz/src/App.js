@@ -1,10 +1,16 @@
-import Button_c from "./global_components/Button_c";
+import * as React from "react";
+import Dashboard from "./components/Dashboard";
+import HelloWorldNEW from "./components/HelloWorldNEW";
+import { Routes, Route } from "react-router-dom";
+import NoMatch from "./components/NoMatch";
 
 function App() {
   return (
     <div className="App">
-      <header /> Hello World!
-      <Button_c name="Get Started" dest="ok"></Button_c>
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="*" element={<NoMatch />} />
+      </Routes>
     </div>
   );
 }

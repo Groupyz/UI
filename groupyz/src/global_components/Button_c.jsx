@@ -10,20 +10,18 @@ const Button_c = ({ name, dest }) => {
   }
 
   const showToastMessage = () => {
-    console.log(dest);
-    toast.error("Not Supported!", {
-      position: toast.POSITION.TOP_CENTER,
-    });
+    if (dest) {
+      window.location.href = `/${dest}`;
+    } else {
+      toast.error("Not Supported!", {
+        position: toast.POSITION.TOP_CENTER,
+      });
+    }
   };
 
   return (
     <div>
-      <Button
-        href="#text-buttons"
-        variant="contained"
-        id="Button_c"
-        onClick={showToastMessage}
-      >
+      <Button variant="contained" id="Button_c" onClick={showToastMessage}>
         {name}
       </Button>
       <ToastContainer />
