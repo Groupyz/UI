@@ -14,13 +14,9 @@ const Footer = () => {
         <div class="row">
           <div class="rightsContainer">{`© Groupyz All rights reserved 2023`}</div>
           <div class="linksContainer">
-            <a href="https://commons.wikimedia.org/wiki/File:Pug_portrait.jpg">
-              Terms
-            </a>
+            <button type="button">Terms</button>
             &nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://commons.wikimedia.org/wiki/File:Pug_portrait.jpg">
-              Privacy
-            </a>
+            <button type="button">Privacy</button>
           </div>
         </div>
       </div>
