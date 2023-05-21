@@ -1,7 +1,14 @@
 import "./styles/Footer.css";
 import Logo from "./assets/images/logo.png";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Footer = () => {
+  const showToastMessage = () => {
+    toast.error("Not supported!", {
+      position: toast.POSITION.TOP_CENTER,
+    });
+  };
   return (
     <footer>
       <div class="footerContainer">
@@ -14,13 +21,14 @@ const Footer = () => {
         <div class="row">
           <div class="rightsContainer">{`© Groupyz All rights reserved 2023`}</div>
           <div class="linksContainer">
-            <a href="https://commons.wikimedia.org/wiki/File:Pug_portrait.jpg">
+            <button onClick={showToastMessage} type="button">
               Terms
-            </a>
+            </button>
             &nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://commons.wikimedia.org/wiki/File:Pug_portrait.jpg">
+            <button onClick={showToastMessage} type="button">
               Privacy
-            </a>
+            </button>
+            <ToastContainer />
           </div>
         </div>
       </div>
