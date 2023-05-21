@@ -12,7 +12,7 @@ const Footer = () => {
         </div>
         <hr class="line" />
         <div class="row">
-          <div class="rightsContainer">{`© Groupyz All rights reserved`}</div>
+          <div class="rightsContainer">{`© Groupyz All rights reserved 2023`}</div>
           <div class="linksContainer">
             <a href="https://commons.wikimedia.org/wiki/File:Pug_portrait.jpg">
               Terms
