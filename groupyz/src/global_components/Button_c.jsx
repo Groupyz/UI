@@ -6,7 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 const Button_c = ({ name, dest }) => {
   if (!name) {
-    throw new Error("The requiredProp is missing!");
+    throw new Error("The name required Prop missing!");
   }
 
   const showToastMessage = () => {
