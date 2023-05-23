@@ -6,8 +6,5 @@ services:
     restart: always
     ports:
       - '3000:3000'
-    volumes:
-      - /Frontend_app/node_modules
-      - ./groupyz:/Frontend_app
     environment:
       - CHOKIDAR_USEPOLLING=true
