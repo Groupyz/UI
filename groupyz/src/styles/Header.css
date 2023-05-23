@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .container {
     display: grid;
     background-color: #F7F9FB;
@@ -26,6 +27,31 @@
     justify-content: left;
     padding-left: 15rem;
     padding-top: 3rem; 
+=======
+.headerContainer {
+    display: grid;
+    background-color: #F7F9FB;
+    grid-template-rows: auto auto auto;
+    grid-gap: 90px;
+    position: relative;
+}
+
+.logoContainer {
+    position: absolute;
+    width: 112px;
+    height: 112px;
+    left: 85px;
+    top: 45px;
+}
+
+.scheduleContainer {
+    position: absolute;
+    width: 154px;
+    height: 22px;
+    left: 286px;
+    top: 77px;
+
+>>>>>>> 0fff56e (init header without buttons)
     font-weight: 600;
     color: #38A3A5;
 }
