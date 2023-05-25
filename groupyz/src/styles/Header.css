@@ -1,4 +1,4 @@
-.headerContainer {
+.container {
     display: grid;
     background-color: #F7F9FB;
     grid-template-rows: auto auto auto;
