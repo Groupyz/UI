@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 .container {
     display: grid;
     background-color: #F7F9FB;
@@ -29,6 +30,9 @@
     padding-top: 3rem; 
 =======
 .headerContainer {
+=======
+.container {
+>>>>>>> 8a2a465 (changed headerContainer to container)
     display: grid;
     background-color: #F7F9FB;
     grid-template-rows: auto auto auto;
