@@ -2,25 +2,30 @@
     display: grid;
     background-color: #F7F9FB;
     grid-template-rows: auto auto auto;
-    grid-gap: 90px;
-    position: relative;
+    grid-gap: 1.5rem;
 }
 
+.row {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 1rem;
+  }
+
 .logoContainer {
-    position: absolute;
-    width: 112px;
-    height: 112px;
-    left: 85px;
-    top: 45px;
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    justify-content: left;
+    padding-left: 3rem;
 }
 
 .scheduleContainer {
-    position: absolute;
-    width: 154px;
-    height: 22px;
-    left: 286px;
-    top: 77px;
-
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    justify-content: left;
+    padding-left: 15rem;
+    padding-top: 3rem; 
     font-weight: 600;
     color: #38A3A5;
 }

@@ -1,12 +1,12 @@
 import "./styles/Header.css";
-import Header_logo from "./assets/images/Header_logo.png";
+import Logo from "./assets/images/logo.png";
 
 const Header = () => {
   return (
     <header>
       <div class="container">
         <div class="logoContainer">
-          <img src={Header_logo} alt="logo" />
+          <img src={Logo} width={112} height={112} alt="logo" />
         </div>
         <div class="scheduleContainer">{`Schedule messages`}</div>
       </div>
