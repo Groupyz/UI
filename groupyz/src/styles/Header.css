@@ -1,11 +1,9 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 .container {
     display: grid;
     background-color: #F7F9FB;
     grid-template-rows: auto auto auto;
     grid-gap: 1.5rem;
-<<<<<<< HEAD
 }
 
 .row {
@@ -28,52 +26,5 @@
     display: flex;
     justify-content: left;
     padding-left: 15rem;
-    padding-top: 3rem; 
-=======
-.headerContainer {
-=======
-.container {
->>>>>>> 8a2a465 (changed headerContainer to container)
-    display: grid;
-    background-color: #F7F9FB;
-    grid-template-rows: auto auto auto;
-    grid-gap: 90px;
-    position: relative;
-=======
->>>>>>> 841cfed (remove pixel settings for components and updated logo)
-}
-
-.row {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-gap: 1rem;
-  }
-
-.logoContainer {
-    grid-column: 1;
-    grid-row: 2;
-    display: flex;
-    justify-content: left;
-    padding-left: 3rem;
-}
-
-.scheduleContainer {
-<<<<<<< HEAD
-    position: absolute;
-    width: 154px;
-    height: 22px;
-    left: 286px;
-    top: 77px;
-
->>>>>>> 0fff56e (init header without buttons)
-=======
-    grid-column: 1;
-    grid-row: 2;
-    display: flex;
-    justify-content: left;
-    padding-left: 15rem;
-    padding-top: 3rem; 
->>>>>>> 841cfed (remove pixel settings for components and updated logo)
-    font-weight: 600;
-    color: #38A3A5;
+    padding-top: 3rem;
 }
