@@ -1,6 +1,6 @@
 import Header from "./Header";
 import Footer from "./Footer";
-// after merge
+
 function App() {
   return (
     <div className="App">
