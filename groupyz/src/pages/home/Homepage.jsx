@@ -1,7 +1,7 @@
-const WelcomePage = () => (
+const Homepage = () => (
   <>
     <header> Hello World!</header>
   </>
 );
 
-export default WelcomePage;
+export default Homepage;
