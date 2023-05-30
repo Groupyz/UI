@@ -1,12 +1,15 @@
-import Header from "./Header";
-import Footer from "./Footer";
+import * as React from "react";
+import WelcomePage from "./pages/welcome/WelcomePage";
+import { Routes, Route } from "react-router-dom";
+import NoMatch from "./components/NoMatch";
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <header>Hello World</header>
-      <Footer />
+      <Routes>
+        <Route path="/" element={<WelcomePage />} />
+        <Route path="*" element={<NoMatch />} />
+      </Routes>
     </div>
   );
 }
