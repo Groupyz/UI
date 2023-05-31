@@ -1,0 +1,23 @@
+.container {
+    display: grid;
+    grid-template-rows: 0.5fr 0.2fr 1fr;
+    grid-gap: 1rem;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headlinesContainer {
+    grid-row: 1;
+}
+
+.buttonContainer {
+    grid-row: 2;
+}
+
+.photosContainer {
+    grid-row: 3;
+}
