@@ -1,23 +1,50 @@
-.container {
+homepage .container {
     display: grid;
-    grid-template-rows: 0.5fr 0.2fr 1fr;
+    grid-template-rows: 0.3fr 0.2fr 1fr;
     grid-gap: 1rem;
+    background-image: url(../images/background.svg);
+    background-size: 1262px 1260px;
+    background-position: center top;
+    background-repeat: no-repeat;
 }
 
-.row {
+homepage .container .row {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .headlinesContainer {
+    font-family: 'Raleway';
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 3.7rem;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #22577A;
     grid-row: 1;
 }
 
-.buttonContainer {
+.subHeadlinesContainer {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: black;
+}
+
+homepage .container .row .buttonContainer #Button_c{
+    font-family: 'Railway';
+    font-style: normal; 
+    font-weight: 600;
+    font-size: 25px;
+    letter-spacing: 0.01em;
     grid-row: 2;
 }
 
-.photosContainer {
+homepage .container .photosContainer {
+    overflow: hidden;
+    padding-bottom: 1rem;
     grid-row: 3;
 }
