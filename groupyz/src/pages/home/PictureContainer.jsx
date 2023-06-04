@@ -1,8 +1,8 @@
 import "./styles/PictureContainer.css";
-import DashBoard from "./images/dashBoard.png";
-import LeftGroupNames from "./images/leftGroupNames.png";
-import CreateMessage from "./images/createMessage.png";
-import RightGroupNames from "./images/rightGroupNames.png";
+import DashBoard from "./images/dashBoard.svg";
+import LeftGroupNames from "./images/leftGroupNames.svg";
+import CreateMessage from "./images/createMessage.svg";
+import RightGroupNames from "./images/rightGroupNames.svg";
 
 const PictureContainer = () => {
   return (
