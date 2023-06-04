@@ -15,7 +15,7 @@ const Footer = () => {
       <div class="footerContainer">
         <div class="row">
           <div class="logoContainer">
-            <img src={Logo} width={112} height={112} alt="logo" />
+            <img src={Logo} width={66} height={66} alt="logo" />
           </div>
         </div>
         <hr class="line" />
