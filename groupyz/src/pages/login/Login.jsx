@@ -1,4 +1,4 @@
-import "./styles/login.css";
+import "./styles/Login.css";
 import Message from "./images/Message.svg";
 
 const Login = () => (
