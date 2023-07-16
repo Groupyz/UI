@@ -1,0 +1,35 @@
+loginComponent .loginContainer {
+    display: grid;
+    grid-template-rows: 2fr 1fr 2fr 1fr 2fr 2fr 1fr 2fr 1fr 1fr;
+    grid-gap: 15px;
+}
+
+loginComponent .loginContainer .row {
+    display: grid;
+    justify-content: left;
+}
+
+.welcomeContainer {
+    grid-row: 1;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 1rem;
+}
+
+.subWelcomeContainer {
+    grid-row: 2;
+    font-weight: 400;
+    line-height: normal;
+}
+
+loginComponent .loginContainer .row .googleButton #Button_c {
+    grid-row: 3;
+    width: 323px;
+    height: 48px;
+    letter-spacing: 0.08px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding:1rem;
+}

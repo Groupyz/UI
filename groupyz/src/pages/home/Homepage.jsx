@@ -2,6 +2,7 @@ import "./styles/Homepage.css";
 import PictureContainer from "./PictureContainer";
 import background from "./images/background.svg";
 import Button_c from "../../components/global/Button_c";
+import logo from "../../../src/assets/images/logo.svg";
 
 const Homepage = () => (
   <homepage>
@@ -19,7 +20,7 @@ const Homepage = () => (
       </div>
       <div class="row">
         <div class="buttonContainer">
-          <Button_c name="Get Started" />
+          <Button_c name="Get Started" img={logo} />
         </div>
       </div>
       <div class="row">
