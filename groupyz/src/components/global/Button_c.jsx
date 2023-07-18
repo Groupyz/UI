@@ -4,9 +4,12 @@ import "./styles/Button_c.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const Button_c = ({ image, name, dest }) => {
+const Button_c = ({ variant, image, name, dest }) => {
   if (!name) {
     throw new Error("The name required Prop missing!");
+  }
+  if (!variant) {
+    variant = "contained";
   }
 
   const showToastMessage = () => {
@@ -22,7 +25,7 @@ const Button_c = ({ image, name, dest }) => {
   if (image) {
     return (
       <div>
-        <Button variant="contained" id="Button_c" onClick={showToastMessage}>
+        <Button variant={variant} id="Button_c" onClick={showToastMessage}>
           <div class="image">
             <img src={image} width={"25px"} height={"25px"} />
           </div>
@@ -34,7 +37,7 @@ const Button_c = ({ image, name, dest }) => {
   } else {
     return (
       <div>
-        <Button variant="contained" id="Button_c" onClick={showToastMessage}>
+        <Button variant={variant} id="Button_c" onClick={showToastMessage}>
           {name}
         </Button>
         <ToastContainer />
