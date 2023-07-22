@@ -11,7 +11,7 @@ const Header = () => {
         </div>
         <div class="scheduleContainer">{`Schedule messages`}</div>
         <div class="loginButton">
-          <Button_c name="Log in" />
+          <Button_c name="Log in" dest="./login" />
         </div>
         <div class="signupButton">
           <Button_c name="Sign up" />
