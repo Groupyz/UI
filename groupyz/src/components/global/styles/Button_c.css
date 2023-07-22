@@ -3,3 +3,8 @@
   border-radius: 50px;
   text-transform: none;
 }
+
+.image {
+  justify-content: left;
+  padding: 0.5rem;
+}
