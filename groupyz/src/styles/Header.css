@@ -31,7 +31,6 @@ header .loginButton {
 }
 
 header .loginButton #Button_c {
-    font-family: 'Raleway';
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -53,7 +52,6 @@ header .signupButton {
 header .signupButton #Button_c {
     grid-row: 1;
     grid-column: 3;
-    font-family: 'Raleway';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
