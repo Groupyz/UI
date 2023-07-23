@@ -14,7 +14,7 @@ const Header = () => {
           <Button_c name="Log in" dest="./login" />
         </div>
         <div class="signupButton">
-          <Button_c name="Sign up" />
+          <Button_c name="Sign up" dest="./signup" />
         </div>
       </div>
     </header>

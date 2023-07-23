@@ -39,7 +39,7 @@ const SignupComponent = () => (
         <div class="multRow">
           <div class="signup">already have an account?</div>
           <div class="signupButton">
-            <Button_c variant="text" name="Log in" />
+            <Button_c variant="text" name="Log in" dest="./login" />
           </div>
         </div>
       </div>
