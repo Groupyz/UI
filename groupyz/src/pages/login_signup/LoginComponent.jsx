@@ -56,7 +56,7 @@ const LoginComponent = () => (
       <div class="multRow">
         <div class="signup">Don't have an account?</div>
         <div class="signupButton">
-          <Button_c variant="text" name="Sign up" />
+          <Button_c variant="text" name="Sign up" dest="./signup" />
         </div>
       </div>
     </div>

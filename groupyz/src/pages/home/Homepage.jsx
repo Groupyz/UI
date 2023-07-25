@@ -19,7 +19,7 @@ const Homepage = () => (
       </div>
       <div class="row">
         <div class="buttonContainer">
-          <Button_c name="Get Started" />
+          <Button_c name="Get Started" dest="./signup" />
         </div>
       </div>
       <div class="row">
