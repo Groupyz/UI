@@ -15,7 +15,6 @@ homepage .container .row {
 }
 
 .headlinesContainer {
-    font-family: 'Raleway';
     font-size: 50px;
     font-weight: 600;
     line-height: 3.7rem;
@@ -38,7 +37,6 @@ homepage .container .row {
 homepage .container .row .buttonContainer #Button_c{
     width: 247px;
     height: 68px;
-    font-family: 'Railway';
     font-style: normal; 
     font-weight: 600;
     font-size: 25px;
