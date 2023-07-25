@@ -23,7 +23,7 @@ loginComponent .loginContainer .row {
     line-height: normal;
 }
 
-loginComponent .loginContainer .row .googleButton #Button_c {
+.row .googleButton #Button_c {
     grid-row: 3;
     width: 323px;
     height: 48px;
@@ -39,7 +39,7 @@ loginComponent .loginContainer .row .googleButton #Button_c {
     text-align: center;
 }
 
-loginComponent .loginContainer .row .seperator .text {
+ .row .seperator .text {
     position: absolute;
     top: 30%;
     left: 50%;
@@ -65,7 +65,7 @@ input[type=text] {
     padding: 0.9rem;
 }
 
-loginComponent .loginContainer .multRow .forgotPassword #Button_c{
+ .multRow .forgotPassword #Button_c{
     grid-column: 2;
     font-size: 12px;
     font-weight: 700;
@@ -77,7 +77,7 @@ loginComponent .loginContainer .multRow .forgotPassword #Button_c{
     padding: 1rem;
 }
 
-loginComponent .loginContainer .row .loginButton #Button_c {
+.row .loginButton #Button_c {
     grid-row: 8;
     width: 323px;
     height: 48px;
@@ -97,7 +97,7 @@ loginComponent .loginContainer .row .loginButton #Button_c {
     text-align: center;
 }
 
-loginComponent .loginContainer .multRow .signupButton #Button_c {
+ .multRow .signupButton #Button_c {
     grid-column: 2;
     justify-content: left;
     font-size: 12px;
