@@ -2,18 +2,11 @@
 
 ## With Docker Compose:
 
-1. Build images
+1. Build and run images
    using the following CLI command when in directory containing the Dockerfile:
 
    ```
-   docker compose build
-   ```
-
-2. Run containers:
-   run the following command:
-
-   ```
-   docker compose up
+   docker compose run --build
    ```
 
    Checks:
@@ -32,7 +25,10 @@
 
 1. Enter 'groupyz' dir in terminal
 
-2. Run the following command:
+2. Run the following commands:
+    ```
+      npm install
+    ```
     ```bash
      npm start
     ```
@@ -40,3 +36,15 @@
 # Related:
 
  [Figma](https://www.figma.com/file/ruvGu8XDLHK6gOhztOv8pY/Groupy?type=design&node-id=0-1)
+
+# PR:
+* Template:
+* Problem:
+* Solution:
+* Impact:
+* Testing plan:
+# Example:
+* Problem: "There was no documnatation of which & what information should attached to a PR"
+* Solution: "Add this sections to the reademe of the repo."
+* Impact: "Change will only effect the readme file."
+* Testing plan: "No need for testing."
