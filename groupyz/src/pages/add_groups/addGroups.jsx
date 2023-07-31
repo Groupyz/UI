@@ -1,10 +1,7 @@
 import "./styles/addGroups.css";
 import TextField from "@mui/material/TextField";
 import Search from "./images/search.svg";
-// import Checkbox from "../../components/global/Checkbox";
 import GroupsList from "./data/groupsList.jsx";
-// import SearchBar from "../../components/global/SearchBar";
-// import data from "./data/groupsList.json";
 import { useState } from "react";
 
 const AddGroups = () => {

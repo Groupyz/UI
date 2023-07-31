@@ -40,17 +40,6 @@ addGroups .col {
     grid-template-columns: 0.3fr 0.7fr;
 }
 
-/* .secondRow .groupsBorder {
-    grid-column: 1;
-    display: flex;
-    flex-shrink: 0;
-    margin-left: 99%;
-    height: 1px;
-    width: auto;
-    transform: rotate(90deg);
-    background: black;
-} */
-
 .searchBar {
     grid-column: 1;
     width: 99%;
