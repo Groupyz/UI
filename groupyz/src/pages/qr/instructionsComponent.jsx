@@ -74,16 +74,21 @@ const InstructionsComponent = () => (
           <p>Change app</p>
         </div>
         <div>
-          <button type="whatsapp" onClick={showToastMessage}>
-            <img src={whatsapp} />
-          </button>
-          <button type="telegram" onClick={showToastMessage}>
-            <img src={telegram} />
-          </button>
-          <button type="facebook" onClick={showToastMessage}>
-            <img src={facebook} />
-          </button>
-          <ToastContainer />
+          <div class="whatsappButton">
+            <button type="whatsapp" onClick={showToastMessage}>
+              <img src={whatsapp} />
+            </button>
+          </div>
+          <div class="telegramButton">
+            <button type="telegram" onClick={showToastMessage}>
+              <img src={telegram} />
+            </button>
+          </div>
+          <div class="facebookButton">
+            <button type="facebook" onClick={showToastMessage}>
+              <img src={facebook} />
+            </button>
+          </div>
         </div>
       </div>
     </div>
