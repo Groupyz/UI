@@ -3,5 +3,13 @@
     { "group_id": "2", "group_name": "Survivng the sadna" },
     { "group_id": "3", "group_name": "My group" },
     { "group_id": "4", "group_name": "Friends" },
-    { "group_id": "5", "group_name": "Complexity summer" }
+    { "group_id": "5", "group_name": "Complexity summer"},
+    { "group_id": "6", "group_name": "Football"},
+    { "group_id": "7", "group_name": "Yoga"},
+    { "group_id": "8", "group_name": "Work"},
+    { "group_id": "9", "group_name": "School"},
+    { "group_id": "10", "group_name": "University"},
+    { "group_id": "11", "group_name": "Food"},
+    { "group_id": "12", "group_name": "College"},
+    { "group_id": "13", "group_name": "Vacation"}
 ]
