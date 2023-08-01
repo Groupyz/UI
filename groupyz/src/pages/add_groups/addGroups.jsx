@@ -7,6 +7,7 @@ import GroupsList from "./data/groupsList.jsx";
 import { useState } from "react";
 import Button_c from "../../components/global/Button_c";
 import arrow from "./images/arrow.svg";
+import X from "./images/X.svg";
 
 const AddGroups = () => {
   const [inputText, setInputText] = useState("");
@@ -15,6 +16,11 @@ const AddGroups = () => {
     //convert input text to lower case
     var lowerCase = e.target.value.toLowerCase();
     setInputText(lowerCase);
+  };
+  const handleGroupDeselection = (groupName) => {
+    setSelectedGroups((prevSelectedGroups) =>
+      prevSelectedGroups.filter((group) => group !== groupName)
+    );
   };
 
   return (
@@ -52,8 +58,15 @@ const AddGroups = () => {
               {selectedGroups.map((group) => (
                 <div className="selectedGroups">
                   <Grid container columns={{ xs: 4 }}>
-                    <Grid item xs={4}>
-                      <Item>{group}</Item>
+                    <Grid item xs={3}>
+                      <span>{group}</span>
+                    </Grid>
+                    <Grid item xs={1}>
+                      <div class="xButton">
+                        <button onClick={() => handleGroupDeselection(group)}>
+                          <img src={X} alt="X button" />
+                        </button>
+                      </div>
                     </Grid>
                   </Grid>
                 </div>

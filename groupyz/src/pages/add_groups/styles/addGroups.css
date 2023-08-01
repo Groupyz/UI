@@ -90,12 +90,20 @@ addGroups .col {
 .selectedGroups {
     width: 207px;
     height: 35px;
+    background-size: fill;
     border-radius: 15px;
     border: 1px solid #159895;
     padding-left: 1rem;
     padding-top: 3%;
     font-size: 14px;
     font-weight: 400;
+    overflow-x: hidden;
+}
+
+.xButton {
+    width: 19px;
+    height: 19px;
+    margin-top: 6%;
 }
 
 .thirdCol {

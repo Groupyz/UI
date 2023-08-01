@@ -11,5 +11,7 @@
     { "group_id": "10", "group_name": "University"},
     { "group_id": "11", "group_name": "Food"},
     { "group_id": "12", "group_name": "College"},
-    { "group_id": "13", "group_name": "Vacation"}
+    { "group_id": "13", "group_name": "Vacation"},
+    {"group_id": "14", "group_name": "Group with long ass name that is way way too long for whatsapp name"},
+    {"group_id":"15", "group_name": "group with shorter but still long name"}
 ]
