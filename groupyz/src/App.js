@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Homepage from "./pages/home/Homepage";
 import LoginSignup from "./pages/login_signup/LoginSignup";
 import QrPage from "./pages/qr/instructionsComponent";
+import AddGroups from "./pages/add_groups/addGroups";
 import NoMatch from "./components/NoMatch";
 import Header from "./Header";
 import Footer from "./Footer";
@@ -16,6 +17,7 @@ function App() {
         <Route path="/login" element={<LoginSignup />} />
         <Route path="/signup" element={<LoginSignup />} />
         <Route path="/qr" element={<QrPage />} />
+        <Route path="/addgroups" element={<AddGroups />} />
         <Route path="*" element={<NoMatch />} />
       </Routes>
       <Footer />
