@@ -6,7 +6,7 @@
    using the following CLI command when in directory containing the Dockerfile:
 
    ```
-   docker compose run --build
+   docker compose up --build
    ```
 
    Checks:
