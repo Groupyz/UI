@@ -37,7 +37,13 @@ addGroups .col {
 
 .secondRow {
     margin-top: 1rem;
-    grid-template-columns: 0.3fr 0.7fr;
+    grid-template-columns: 0.3fr 0.6fr 0.1fr; 
+}
+
+.firstCol{
+    grid-column: 1;
+    height: 50rem;
+    overflow-y: auto;  
 }
 
 .searchBar {
@@ -71,4 +77,42 @@ addGroups .col {
     font-size: 14px;
     font-weight: 600;
     padding: 15%;
+}
+
+.secondCol {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin-left: 10%;
+    margin-bottom: 30rem;
+}
+
+.selectedGroups {
+    width: 207px;
+    height: 35px;
+    background-size: fill;
+    border-radius: 15px;
+    border: 1px solid #159895;
+    padding-left: 1rem;
+    padding-top: 3%;
+    font-size: 14px;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+
+.xButton {
+    width: 19px;
+    height: 19px;
+    margin-top: 6%;
+}
+
+.thirdCol {
+    grid-column: 3;
+}
+
+addGroups .secondRow .thirdCol .continueButton #Button_c {
+    width: 58px;
+    height: 58px;
+    fill: #159895;
+    border-radius: 50%;
 }

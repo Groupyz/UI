@@ -2,30 +2,43 @@ import "../styles/addGroups.css";
 import data from "./dummyData.json";
 import Checkbox from "../../../components/global/Checkbox";
 
-const groupsList = (props) => {
+// const groupsList = (props) => {
+const groupsList = ({ input, selectedGroups, setSelectedGroups }) => {
   const filteredData = data.filter((el) => {
     //if no input the return the original
-    if (props.input === "") {
+    if (input === "") {
       return el;
     }
     //return the item which contains the user input
     else {
-      return el.group_name.toLowerCase().includes(props.input);
+      return el.group_name.toLowerCase().includes(input);
     }
   });
 
+  const handleGroupSelection = (groupName) => {
+    setSelectedGroups((prevSelectedGroups) => {
+      if (prevSelectedGroups.includes(groupName)) {
+        return prevSelectedGroups.filter((group) => group !== groupName);
+      } else {
+        return [...prevSelectedGroups, groupName];
+      }
+    });
+  };
+
   return (
-    <div class="groupList">
-      {filteredData.map((item) => {
-        return (
-          <div class="multRow">
-            <div class="group">{item.group_name}</div>
-            <div class="checkbox">
-              <Checkbox />
-            </div>
+    <div className="groupList">
+      {filteredData.map((item) => (
+        <div key={item.group_id} className="multRow">
+          <div className="group">{item.group_name}</div>
+          <div className="checkbox">
+            <Checkbox
+              label={item.group_name}
+              selectedGroups={selectedGroups}
+              setSelectedGroups={setSelectedGroups}
+            />
           </div>
-        );
-      })}
+        </div>
+      ))}
     </div>
   );
 };
