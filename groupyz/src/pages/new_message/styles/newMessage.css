@@ -1,0 +1,64 @@
+newMessage .container {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+newMessage .row {
+    display: grid;
+}
+
+newMessage .col {
+    display: grid;
+}
+
+.firstRow {
+    grid-row: 1;
+}
+
+.headlineBorder{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #57C5B6;
+}
+
+.progressBar {
+    width: 85%;
+    height: 5px;
+    background: #57C5B6;
+}
+
+.headline {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.secondRow {
+    margin-top: 1rem;
+    grid-template-columns: 0.2fr 0.7fr 0.1fr; 
+}
+
+.firstCol{
+    grid-column: 1;
+    height: 50rem;
+    overflow-y: auto;
+    padding-left: 40%;
+}
+
+newMessage .secondRow .firstCol .addGroups #Button_c {
+    width: 48px;
+    height: 48px;
+    fill: #159895;
+    border-radius: 50%;
+}
+
+.borderLine {
+    grid-column: 1;
+    border: 1px solid #B5B4B4;
+    width: 42.5px;
+    stroke-width: 1px;
+    margin-top:10%;    
+    padding-left: 11%;
+}
