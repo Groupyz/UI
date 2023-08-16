@@ -59,6 +59,13 @@ instructionsComponent .instructionsContainer .col {
 .scanFrameContainer {
   padding-top: 7%;
   padding-left: 4%;
+  position: relative;
+}
+
+.qr {
+  position: absolute;
+  padding-top: 14%;
+  padding-left: 2%;
 }
 
 .changeAppContainer {
