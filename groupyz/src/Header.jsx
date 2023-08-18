@@ -8,7 +8,9 @@ import ScheduleButton from "./components/global/ScheduleButton";
 const Header = () => {
   const location = useLocation();
   const isLoggedIn =
-    location.pathname === "/addgroups" || location.pathname === "/qr";
+    location.pathname.toLowerCase() !== "/" &&
+    location.pathname.toLowerCase() !== "/login" &&
+    location.pathname.toLowerCase() !== "/signup";
   return (
     <header>
       <div class="container">
