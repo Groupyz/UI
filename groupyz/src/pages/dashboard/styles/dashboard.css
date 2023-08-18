@@ -60,17 +60,15 @@ homepage .container .row {
 }
 
 .createButton #Button_c{
-    grid-column: 2;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 22px;
-    letter-spacing: 0.1em;
-    text-align: left;
-    border-radius: none;
-    border: none;
+    width: 332px;
+    height: 56px;
+    top: 421px;
+    left: 95px;
+    border-radius: 20px;
+    background-color: #159895;
     padding: 0.7rem;
     padding-left: 2.5%;
     padding-right: 2.5%;
-    margin-left: 11%;
-    margin-top: -11%;
+    margin-left: 4%;
+    margin-top: -70%;
 }
