@@ -72,3 +72,15 @@ homepage .container .row {
     margin-left: 4%;
     margin-top: -70%;
 }
+
+.img {
+    grid-column: 2;
+    grid-row: 2;
+    padding-left: 9%;
+    padding-top: 1%;
+    width: 374px;
+    height: 325px;
+    top: 553px;
+    left: 71px;
+
+}
