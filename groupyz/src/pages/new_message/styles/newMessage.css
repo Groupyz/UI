@@ -11,23 +11,23 @@ newMessage .col {
     display: grid;
 }
 
-.firstRow {
+newMessage .firstRow {
     grid-row: 1;
 }
 
-.headlineBorder{
+newMessage .headlineBorder{
     width: 100%;
     height: 100%;
     border: 2px solid #57C5B6;
 }
 
-.progressBar {
+newMessage .progressBar {
     width: 85%;
     height: 5px;
     background: #57C5B6;
 }
 
-.headline {
+newMessage .headline {
     font-size: 25px;
     font-weight: 600;
     text-align: center;
@@ -35,23 +35,28 @@ newMessage .col {
     margin-bottom: 1rem;
 }
 
-.secondRow {
+newMessage .secondRow {
     margin-top: 1rem;
     grid-template-columns: 0.2fr 0.7fr 0.1fr; 
 }
 
-.firstCol{
+newMessage .firstCol{
     grid-column: 1;
     height: 50rem;
     overflow-y: auto;
-    padding-left: 40%;
+    border-right: 1px solid #B9B7B7;
 }
 
+.buttonPosition {
+    margin-left: 40%;
+}
 newMessage .secondRow .firstCol .addGroups #Button_c {
     width: 48px;
     height: 48px;
-    fill: #159895;
+    background: #159895;
     border-radius: 50%;
+    text-align: center;
+    padding-top: 7%;
 }
 
 .borderLine {
@@ -61,4 +66,18 @@ newMessage .secondRow .firstCol .addGroups #Button_c {
     stroke-width: 1px;
     margin-top:10%;    
     padding-left: 11%;
+}
+
+.groupsPosition {
+    grid-template-rows: auto;
+    padding-left: 15%;
+    padding-top: 5%;
+}
+
+.selectedGroups {
+    margin-top: 5%;
+    width: 176px;
+    height: 35px;
+    border-radius: 20px;
+    border: 1px solid #159895;
 }
