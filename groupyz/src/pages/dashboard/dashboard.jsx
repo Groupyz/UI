@@ -1,5 +1,6 @@
 import "./styles/dashboard.css";
 import Button_c from "../../components/global/Button_c";
+import dashboard from "./images/dashboard.svg";
 
 const Dashboard = () => (
   <dashboard>
@@ -21,6 +22,9 @@ const Dashboard = () => (
     </div>
     <div className="createButton">
       <Button_c name=" +  Schedule a new message" />
+    </div>
+    <div className="img">
+      <img src={dashboard} alt="" />
     </div>
   </dashboard>
 );
