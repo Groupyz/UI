@@ -8,7 +8,11 @@ import { useState } from "react";
 
 const NewMessage = () => {
   const location = useLocation();
-  const preSelectedGroups = location.state.selectedGroups;
+  let preSelectedGroups = [];
+  if (location.state) {
+    preSelectedGroups = location.state.selectedGroups;
+  }
+
   const [selectedGroups, setSelectedGroups] = useState(preSelectedGroups);
   const handleGroupDeselection = (groupName) => {
     setSelectedGroups((prevSelectedGroups) =>
