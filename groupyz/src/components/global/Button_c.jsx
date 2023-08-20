@@ -11,6 +11,7 @@ const Button_c = ({
   height = "25px",
   name,
   dest,
+  onChange,
 }) => {
   if (!name) {
     throw new Error("The name required Prop missing!");
@@ -26,10 +27,14 @@ const Button_c = ({
     }
   };
 
+  if (!onChange) {
+    onChange = showToastMessage;
+  }
+
   if (image) {
     return (
       <div>
-        <Button variant={variant} id="Button_c" onClick={showToastMessage}>
+        <Button variant={variant} id="Button_c" onClick={onChange}>
           <div class="image">
             <img src={image} width={width} height={height} />
           </div>
@@ -41,7 +46,7 @@ const Button_c = ({
   } else {
     return (
       <div>
-        <Button variant={variant} id="Button_c" onClick={showToastMessage}>
+        <Button variant={variant} id="Button_c" onClick={onChange}>
           {name}
         </Button>
         <ToastContainer />
