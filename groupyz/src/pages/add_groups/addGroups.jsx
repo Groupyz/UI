@@ -1,17 +1,23 @@
 import "./styles/addGroups.css";
 import TextField from "@mui/material/TextField";
 import Grid from "@mui/material/Grid";
-import Item from "@mui/material/Grid";
 import Search from "./images/search.svg";
 import GroupsList from "./data/groupsList.jsx";
 import { useState } from "react";
 import Button_c from "../../components/global/Button_c";
 import arrow from "./images/arrow.svg";
 import X from "./images/X.svg";
+import { useNavigate } from "react-router";
 
 const AddGroups = () => {
+  const navigate = useNavigate();
   const [inputText, setInputText] = useState("");
   const [selectedGroups, setSelectedGroups] = useState([]);
+
+  const handleContinue = () => {
+    navigate("/newmessage", { state: { selectedGroups: selectedGroups } });
+  };
+
   let inputHandler = (e) => {
     //convert input text to lower case
     var lowerCase = e.target.value.toLowerCase();
@@ -74,7 +80,15 @@ const AddGroups = () => {
             </div>
             <div class="thirdCol">
               <div class="continueButton">
-                <Button_c name=" " image={arrow} width="34px" height="34px" />
+                <button className="custom-button" onClick={handleContinue}>
+                  <Button_c
+                    name=" "
+                    image={arrow}
+                    width="34px"
+                    height="34px"
+                    isUseNav={true}
+                  />
+                </button>
               </div>
             </div>
           </div>
