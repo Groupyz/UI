@@ -11,6 +11,7 @@ const Button_c = ({
   height = "25px",
   name,
   dest,
+  isUseNav = false,
   onChange,
 }) => {
   if (!name) {
@@ -18,8 +19,10 @@ const Button_c = ({
   }
 
   const showToastMessage = () => {
-    if (dest) {
+    if (dest && !isUseNav) {
       window.location.href = `/${dest}`;
+    } else if (isUseNav) {
+      return;
     } else {
       toast.error("Not Supported!", {
         position: toast.POSITION.TOP_CENTER,
