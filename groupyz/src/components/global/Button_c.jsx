@@ -11,11 +11,8 @@ const Button_c = ({
   height = "25px",
   name,
   dest,
-<<<<<<< HEAD
   isUseNav = false,
-=======
   onChange,
->>>>>>> 9f83cc6f80b49d261a81ee96de648d6c73b3b8eb
 }) => {
   if (!name) {
     throw new Error("The name required Prop missing!");
