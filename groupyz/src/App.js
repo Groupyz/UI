@@ -4,6 +4,7 @@ import Homepage from "./pages/home/Homepage";
 import LoginSignup from "./pages/login_signup/LoginSignup";
 import QrPage from "./pages/qr/instructionsComponent";
 import AddGroups from "./pages/add_groups/addGroups";
+import Dashboard from "./pages/dashboard/dashboard";
 import NewMessage from "./pages/new_message/newMessage";
 import NoMatch from "./components/NoMatch";
 import Header from "./Header";
@@ -19,6 +20,7 @@ function App() {
         <Route path="/signup" element={<LoginSignup />} />
         <Route path="/qr" element={<QrPage />} />
         <Route path="/addgroups" element={<AddGroups />} />
+        <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/newmessage" element={<NewMessage />} />
         <Route path="*" element={<NoMatch />} />
       </Routes>

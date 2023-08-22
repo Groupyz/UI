@@ -6,6 +6,11 @@ header .container {
     grid-gap: 1.5rem;
 }
 
+.loginSignupContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
 header .container .logoContainer {
     grid-column: 1;
     display: flex;
@@ -22,7 +27,7 @@ header .container .logoContainer {
     color: #38A3A5;
 }
 header .loginButton {
-    grid-column: 3;
+    grid-column: 1;
     grid-row: 1;
     display: flex;
     justify-content: flex-start;
@@ -41,7 +46,7 @@ header .loginButton #Button_c {
 }
 
 header .signupButton {
-    grid-column: 3;
+    grid-column: 2;
     grid-row:1;
     display: flex;
     justify-content: flex-end;
