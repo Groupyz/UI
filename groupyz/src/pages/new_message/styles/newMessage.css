@@ -37,7 +37,7 @@ newMessage .headline {
 
 newMessage .secondRow {
     margin-top: 1rem;
-    grid-template-columns: 0.2fr 0.7fr 0.1fr; 
+    grid-template-columns: 0.2fr 0.6fr 0.2fr; 
 }
 
 newMessage .firstCol{
@@ -85,7 +85,7 @@ newMessage .secondRow .firstCol .addGroups #Button_c {
 newMessage .secondColumn {
     grid-column: 2;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 4fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 3fr;
     margin-left: 5%;
 }
 
@@ -99,3 +99,19 @@ newMessage input[type=text] {
     margin-top: 5%;
 }   
 
+newMessage .secondColumn .multRow {
+    display: grid;
+    grid-template-columns: 10% 50% 40%;
+    margin-top: 5%;
+}
+
+.datePicker {
+    width: 60%;
+    height: 50%;
+    padding-left: 5%;
+}
+
+.timePicker {
+    width: 60%;
+    height: 50%;
+}

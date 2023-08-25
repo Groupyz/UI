@@ -3,8 +3,12 @@ import Button_c from "../../components/global/Button_c";
 import Plus from "./images/plus.svg";
 import { useLocation } from "react-router-dom";
 import Grid from "@mui/material/Grid";
+import { LocalizationProvider } from "@mui/x-date-pickers";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+import { DatePicker, TimePicker } from "@mui/x-date-pickers";
 import X from "../add_groups/images/X.svg";
 import { useState } from "react";
+import Clock from "../dashboard/images/clock.svg";
 
 const NewMessage = () => {
   const location = useLocation();
@@ -57,9 +61,20 @@ const NewMessage = () => {
                 ))}
               </div>
             </div>
-            <div class="secondColumn">
-              <input type="text" placeholder="Add headline to message" />
-            </div>
+            <LocalizationProvider dateAdapter={AdapterDayjs}>
+              <div class="secondColumn">
+                <input type="text" placeholder="Add headline to message" />
+                <div class="multRow">
+                  <img src={Clock} alt="clock" />
+                  <div class="datePicker">
+                    <DatePicker label="Pick date" format="DD/MM/YYYY" />
+                  </div>
+                  <div class="timePicker">
+                    <TimePicker label="Pick time" format="hh:mm" />
+                  </div>
+                </div>
+              </div>
+            </LocalizationProvider>
           </div>
         </div>
       </div>
