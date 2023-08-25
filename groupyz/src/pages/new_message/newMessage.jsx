@@ -57,6 +57,9 @@ const NewMessage = () => {
                 ))}
               </div>
             </div>
+            <div class="secondColumn">
+              <input type="text" placeholder="Add headline to message" />
+            </div>
           </div>
         </div>
       </div>

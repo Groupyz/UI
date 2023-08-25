@@ -81,3 +81,21 @@ newMessage .secondRow .firstCol .addGroups #Button_c {
     border-radius: 20px;
     border: 1px solid #159895;
 }
+
+newMessage .secondColumn {
+    grid-column: 2;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 4fr;
+    margin-left: 5%;
+}
+
+newMessage input[type=text] {
+    grid-row: 1;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 70%;
+    height: 40%;
+    font-size: 30px;
+    margin-top: 5%;
+}   
+
