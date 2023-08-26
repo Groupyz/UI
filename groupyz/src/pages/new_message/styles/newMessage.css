@@ -37,7 +37,7 @@ newMessage .headline {
 
 newMessage .secondRow {
     margin-top: 1rem;
-    grid-template-columns: 0.2fr 0.7fr 0.1fr; 
+    grid-template-columns: 0.2fr 0.6fr 0.2fr; 
 }
 
 newMessage .firstCol{
@@ -80,4 +80,74 @@ newMessage .secondRow .firstCol .addGroups #Button_c {
     height: 35px;
     border-radius: 20px;
     border: 1px solid #159895;
+}
+
+newMessage .secondColumn {
+    grid-column: 2;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 3fr;
+    margin-left: 5%;
+}
+
+newMessage input[type=text] {
+    grid-row: 1;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 90%;
+    height: 40%;
+    font-size: 30px;
+    margin-top: 5%;
+}   
+
+newMessage .secondColumn .multRow {
+    display: grid;
+    grid-template-columns: 10% 50% 40%;
+    margin-top: 5%;
+}
+
+.logoPos {
+    margin-top: 35%;
+}
+.datePicker {
+    width: 60%;
+    height: 50%;
+    padding-left: 5%;
+}
+
+.timePicker {
+    width: 60%;
+    height: 50%;
+}
+
+.selectRepeat {
+    width: 60%;
+    height: 50%;
+    padding-top: 4%;
+    padding-left: 5%;
+}
+
+newMessage input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    border-radius: 2px;
+    border: 2px solid black;
+    background: #FFF;
+    margin-top: 10%;
+}
+
+newMessage .editor {
+    margin-top: 5%;
+    margin-left: 5%;
+    height: 80%;
+    width: 170%;
+}
+
+newMessage .saveButton #Button_c {
+    grid-column: 3;
+    width: 166px;
+    height: 43px;
+    border-radius: 20px;
+    background: #159895;
+    margin-top: 20%;
+    margin-left: 10%;
 }
