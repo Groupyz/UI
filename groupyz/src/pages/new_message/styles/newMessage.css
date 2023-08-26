@@ -137,6 +137,7 @@ newMessage input[type="checkbox"] {
 
 newMessage .editor {
     margin-top: 5%;
+    margin-left: 5%;
     height: 80%;
     width: 170%;
 }
