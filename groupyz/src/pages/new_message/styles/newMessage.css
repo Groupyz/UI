@@ -93,7 +93,7 @@ newMessage input[type=text] {
     grid-row: 1;
     border: none;
     border-bottom: 1px solid black;
-    width: 70%;
+    width: 90%;
     height: 40%;
     font-size: 30px;
     margin-top: 5%;
@@ -105,6 +105,9 @@ newMessage .secondColumn .multRow {
     margin-top: 5%;
 }
 
+.logoPos {
+    margin-top: 35%;
+}
 .datePicker {
     width: 60%;
     height: 50%;
@@ -114,4 +117,20 @@ newMessage .secondColumn .multRow {
 .timePicker {
     width: 60%;
     height: 50%;
+}
+
+.selectRepeat {
+    width: 60%;
+    height: 50%;
+    padding-top: 4%;
+    padding-left: 5%;
+}
+
+newMessage input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    border-radius: 2px;
+    border: 2px solid black;
+    background: #FFF;
+    margin-top: 10%;
 }

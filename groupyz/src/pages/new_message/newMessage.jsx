@@ -9,6 +9,12 @@ import { DatePicker, TimePicker } from "@mui/x-date-pickers";
 import X from "../add_groups/images/X.svg";
 import { useState } from "react";
 import Clock from "../dashboard/images/clock.svg";
+import Arrows from "../dashboard/images/arrows.svg";
+import { Select } from "@mui/material";
+import InputLabel from "@mui/material/InputLabel";
+import MenuItem from "@mui/material/MenuItem";
+import FormControl from "@mui/material/FormControl";
+import Checkbox from "../../components/global/Checkbox";
 
 const NewMessage = () => {
   const location = useLocation();
@@ -65,13 +71,35 @@ const NewMessage = () => {
               <div class="secondColumn">
                 <input type="text" placeholder="Add headline to message" />
                 <div class="multRow">
-                  <img src={Clock} alt="clock" />
+                  <div class="logoPos">
+                    <img src={Clock} alt="clock" />
+                  </div>
                   <div class="datePicker">
                     <DatePicker label="Pick date" format="DD/MM/YYYY" />
                   </div>
                   <div class="timePicker">
                     <TimePicker label="Pick time" format="hh:mm" />
                   </div>
+                </div>
+                <div class="multRow">
+                  <div class="logoPos">
+                    <img src={Arrows} alt="arrows" />
+                  </div>
+                  <div class="selectRepeat">
+                    <FormControl fullWidth>
+                      <InputLabel id="repeat">repeat</InputLabel>
+                      <Select placeholder="repeat">
+                        <MenuItem value="once">Once</MenuItem>
+                        <MenuItem value="weekly">Weekly</MenuItem>
+                        <MenuItem value="monthly">Monthly</MenuItem>
+                        <MenuItem value="none">No repeat</MenuItem>
+                      </Select>
+                    </FormControl>
+                  </div>
+                  <label>
+                    <input type="checkbox" />
+                    Everyday
+                  </label>
                 </div>
               </div>
             </LocalizationProvider>
