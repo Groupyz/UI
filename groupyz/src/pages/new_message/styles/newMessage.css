@@ -85,7 +85,7 @@ newMessage .secondRow .firstCol .addGroups #Button_c {
 newMessage .secondColumn {
     grid-column: 2;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr 3fr;
     margin-left: 5%;
 }
 
@@ -133,4 +133,10 @@ newMessage input[type="checkbox"] {
     border: 2px solid black;
     background: #FFF;
     margin-top: 10%;
+}
+
+newMessage .editor {
+    margin-top: 5%;
+    height: 80%;
+    width: 170%;
 }
