@@ -140,3 +140,13 @@ newMessage .editor {
     height: 80%;
     width: 170%;
 }
+
+newMessage .saveButton #Button_c {
+    grid-column: 3;
+    width: 166px;
+    height: 43px;
+    border-radius: 20px;
+    background: #159895;
+    margin-top: 20%;
+    margin-left: 10%;
+}

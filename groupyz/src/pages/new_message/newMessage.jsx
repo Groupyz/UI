@@ -122,6 +122,9 @@ const NewMessage = () => {
                   />
                 </div>
               </div>
+              <div class="saveButton">
+                <Button_c name="Save" />
+              </div>
             </LocalizationProvider>
           </div>
         </div>
