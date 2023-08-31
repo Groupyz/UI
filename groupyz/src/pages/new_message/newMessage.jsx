@@ -18,6 +18,7 @@ import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Text from "./images/text.svg";
+import parse from "html-react-parser";
 
 const NewMessage = () => {
   const location = useLocation();
@@ -25,17 +26,23 @@ const NewMessage = () => {
   if (location.state) {
     preSelectedGroups = location.state.selectedGroups;
   }
+  const parse = require("html-react-parser");
   const today = dayjs().format("YYYY-MM-DD");
   const now = dayjs().format("HH:mm");
   const [date, setDate] = useState(today);
   const [time, setTime] = useState(now);
   const [selectedGroups, setSelectedGroups] = useState(preSelectedGroups);
+  const [headline, setHeadline] = useState("");
+  const [message, setMessage] = useState("");
   const handleGroupDeselection = (groupName) => {
     setSelectedGroups((prevSelectedGroups) =>
       prevSelectedGroups.filter((group) => group !== groupName)
     );
   };
-
+  const handleMessage = (newMessage) => {
+    const parsedMessage = parse(newMessage);
+    setMessage(parsedMessage.props.children);
+  };
   const editorModules = {
     toolbar: [
       [{ size: ["normal", "large", "huge"] }],
@@ -83,7 +90,13 @@ const NewMessage = () => {
             </div>
             <LocalizationProvider dateAdapter={AdapterDayjs}>
               <div class="secondColumn">
-                <input type="text" placeholder="Add headline to message" />
+                <input
+                  type="text"
+                  placeholder="Add headline to message"
+                  onChange={(newHeadline) =>
+                    setHeadline(newHeadline.target.value)
+                  }
+                />
                 <div class="multRow">
                   <div class="logoPos">
                     <img src={Clock} alt="clock" />
@@ -102,7 +115,9 @@ const NewMessage = () => {
                     <TimePicker
                       label="Pick time"
                       format="hh:mm"
-                      onChange={(newTime) => setTime(newTime.format("HH:mm"))}
+                      onChange={(newTime) =>
+                        setTime(newTime.format("HH:mm:ss"))
+                      }
                     />
                   </div>
                 </div>
@@ -111,7 +126,7 @@ const NewMessage = () => {
                     <img src={Arrows} alt="arrows" />
                   </div>
                   <div class="selectRepeat">
-                    <FormControl fullWidth>
+                    <FormControl fullWidth disabled>
                       <InputLabel id="repeat">repeat</InputLabel>
                       <Select placeholder="repeat">
                         <MenuItem value="once">Once</MenuItem>
@@ -122,7 +137,7 @@ const NewMessage = () => {
                     </FormControl>
                   </div>
                   <label>
-                    <input type="checkbox" />
+                    <input type="checkbox" disabled />
                     Everyday
                   </label>
                 </div>
@@ -134,6 +149,7 @@ const NewMessage = () => {
                     theme="snow"
                     className="editor"
                     modules={editorModules}
+                    onChange={(newMessage) => handleMessage(newMessage)}
                   />
                 </div>
               </div>
