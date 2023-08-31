@@ -5,7 +5,7 @@ import plus from "../../assets/images/plus.svg";
 const ScheduleButton = () => {
   return (
     <div class="schedule">
-      <Button_c image={plus} name="Schedule a new message" />
+      <Button_c image={plus} name="Schedule a new message" dest="./addgroups" />
     </div>
   );
 };

@@ -26,7 +26,7 @@ const Dashboard = () => (
             </p>
           </div>
           <div className="createButton">
-            <Button_c name=" +  Schedule a new message" />
+            <Button_c name=" +  Schedule a new message" dest="./addgroups" />
           </div>
           <div className="img">
             <img src={dashboard} alt="" />
