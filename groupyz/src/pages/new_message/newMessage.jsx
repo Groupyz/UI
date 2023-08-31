@@ -6,6 +6,7 @@ import Plus from "./images/plus.svg";
 import { useLocation } from "react-router-dom";
 import Grid from "@mui/material/Grid";
 import { LocalizationProvider } from "@mui/x-date-pickers";
+import dayjs from "dayjs";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { DatePicker, TimePicker } from "@mui/x-date-pickers";
 import X from "../add_groups/images/X.svg";
@@ -24,7 +25,10 @@ const NewMessage = () => {
   if (location.state) {
     preSelectedGroups = location.state.selectedGroups;
   }
-
+  const today = dayjs().format("YYYY-MM-DD");
+  const now = dayjs().format("HH:mm");
+  const [date, setDate] = useState(today);
+  const [time, setTime] = useState(now);
   const [selectedGroups, setSelectedGroups] = useState(preSelectedGroups);
   const handleGroupDeselection = (groupName) => {
     setSelectedGroups((prevSelectedGroups) =>
@@ -85,10 +89,21 @@ const NewMessage = () => {
                     <img src={Clock} alt="clock" />
                   </div>
                   <div class="datePicker">
-                    <DatePicker label="Pick date" format="DD/MM/YYYY" />
+                    <DatePicker
+                      label="Pick date"
+                      format="DD/MM/YYYY"
+                      disablePast
+                      onChange={(newDate) =>
+                        setDate(newDate.format("YYYY-MM-DD"))
+                      }
+                    />
                   </div>
                   <div class="timePicker">
-                    <TimePicker label="Pick time" format="hh:mm" />
+                    <TimePicker
+                      label="Pick time"
+                      format="hh:mm"
+                      onChange={(newTime) => setTime(newTime.format("HH:mm"))}
+                    />
                   </div>
                 </div>
                 <div class="multRow">
