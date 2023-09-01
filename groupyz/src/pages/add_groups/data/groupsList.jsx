@@ -2,8 +2,12 @@ import "../styles/addGroups.css";
 import data from "./dummyData.json";
 import Checkbox from "../../../components/global/Checkbox";
 
-// const groupsList = (props) => {
-const groupsList = ({ input, selectedGroups, setSelectedGroups }) => {
+const groupsList = ({
+  input,
+  selectedGroups,
+  setSelectedGroups,
+  getDataFromGroupsList,
+}) => {
   const filteredData = data.filter((el) => {
     //if no input the return the original
     if (input === "") {
@@ -15,18 +19,13 @@ const groupsList = ({ input, selectedGroups, setSelectedGroups }) => {
     }
   });
 
-  const handleGroupSelection = (groupName) => {
-    setSelectedGroups((prevSelectedGroups) => {
-      if (prevSelectedGroups.includes(groupName)) {
-        return prevSelectedGroups.filter((group) => group !== groupName);
-      } else {
-        return [...prevSelectedGroups, groupName];
-      }
-    });
+  const handleGroupsData = () => {
+    getDataFromGroupsList(data);
   };
 
   return (
     <div className="groupList">
+      {handleGroupsData()}
       {filteredData.map((item) => (
         <div key={item.group_id} className="multRow">
           <div className="group">{item.group_name}</div>

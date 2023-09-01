@@ -13,9 +13,21 @@ const AddGroups = () => {
   const navigate = useNavigate();
   const [inputText, setInputText] = useState("");
   const [selectedGroups, setSelectedGroups] = useState([]);
+  const [allGroups, setAllGroups] = useState([]);
+
+  const getDataFromGroupsList = (data) => {
+    setAllGroups(data);
+  };
 
   const handleContinue = () => {
-    navigate("/newmessage", { state: { selectedGroups: selectedGroups } });
+    const selectedGroupsInfo = selectedGroups.map((groupName) => {
+      const group = allGroups.find((item) => item.group_name === groupName);
+      return {
+        id: group.group_id,
+        name: group.group_name,
+      };
+    });
+    navigate("/newmessage", { state: { selectedGroups: selectedGroupsInfo } });
   };
 
   let inputHandler = (e) => {
@@ -58,6 +70,7 @@ const AddGroups = () => {
                 input={inputText}
                 selectedGroups={selectedGroups}
                 setSelectedGroups={setSelectedGroups}
+                getDataFromGroupsList={getDataFromGroupsList}
               />
             </div>
             <div class="secondCol">

@@ -34,15 +34,18 @@ const NewMessage = () => {
   const [selectedGroups, setSelectedGroups] = useState(preSelectedGroups);
   const [headline, setHeadline] = useState("");
   const [message, setMessage] = useState("");
+
   const handleGroupDeselection = (groupName) => {
     setSelectedGroups((prevSelectedGroups) =>
-      prevSelectedGroups.filter((group) => group !== groupName)
+      prevSelectedGroups.filter((group) => group.name !== groupName)
     );
   };
+
   const handleMessage = (newMessage) => {
     const parsedMessage = parse(newMessage);
     setMessage(parsedMessage.props.children);
   };
+
   const editorModules = {
     toolbar: [
       [{ size: ["normal", "large", "huge"] }],
@@ -74,11 +77,13 @@ const NewMessage = () => {
                   <div className="selectedGroups">
                     <Grid container columns={{ xs: 4 }}>
                       <Grid item xs={3}>
-                        <span>{group}</span>
+                        <span>{group.name}</span>
                       </Grid>
                       <Grid item xs={1}>
                         <div class="xButton">
-                          <button onClick={() => handleGroupDeselection(group)}>
+                          <button
+                            onClick={() => handleGroupDeselection(group.name)}
+                          >
                             <img src={X} alt="X button" />
                           </button>
                         </div>
