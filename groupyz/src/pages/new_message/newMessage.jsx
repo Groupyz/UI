@@ -19,6 +19,8 @@ import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Text from "./images/text.svg";
 import parse from "html-react-parser";
+import axios from "axios";
+import { toast } from "react-toastify";
 
 const NewMessage = () => {
   const location = useLocation();
@@ -44,6 +46,33 @@ const NewMessage = () => {
   const handleMessage = (newMessage) => {
     const parsedMessage = parse(newMessage);
     setMessage(parsedMessage.props.children);
+  };
+
+  const handleSave = () => {
+    const destGroupsId = selectedGroups.map((group) => group.id);
+    const timeToSend = date + " " + time;
+    const messageData = message;
+    const messageTitle = headline;
+
+    const data = JSON.stringify({
+      user_id: 1,
+      repeat: "once",
+      dest_groups_id: destGroupsId,
+      time_to_send: timeToSend,
+      message_data: messageData,
+      message_title: messageTitle,
+    });
+    console.log(data);
+    const config = {
+      headers: { "Content-Type": "application/json" },
+    };
+    axios.post("http://localhost:5052/message", data, config).catch((error) => {
+      if (error.response) {
+        toast.error(error.response.data.message, {
+          position: toast.POSITION.TOP_CENTER,
+        });
+      }
+    });
   };
 
   const editorModules = {
@@ -159,7 +188,7 @@ const NewMessage = () => {
                 </div>
               </div>
               <div class="saveButton">
-                <Button_c name="Save" />
+                <Button_c name="Save" onChange={handleSave} />
               </div>
             </LocalizationProvider>
           </div>
