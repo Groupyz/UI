@@ -33,27 +33,28 @@ instructionsComponent .instructionsContainer .col {
   display: grid;
   justify-content: center;
   align-content: center;
-  width: 60%;
   place-items: center;
   height: 500px;
 }
 
 .scanIconContainer {
-  padding-left: 45%;
-  padding-top: 10%;
+  padding-left: 60%;
+  margin-top: -90%;
 }
 
 .scanTitleContainer {
   font-size: 25px;
   font-weight: 700;
-  padding-left: 24%;
+  padding-left: 30%;
+  margin-top: -80%;
+  width: 100%;
 }
 
 .scanContentContainer {
   font-size: 16px;
   font-weight: 400;
-  padding-left: 8%;
-  margin-top: -8%;
+  margin-top: -60%;
+  width: 150%;
 }
 
 .scanFrameContainer {
