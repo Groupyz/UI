@@ -1,6 +1,5 @@
 import "./styles/instructionsComponent.css";
 import scan from "./images/scan.svg";
-import frame from "./images/frame.svg";
 import whatsapp from "./images/whatsapp.svg";
 import telegram from "./images/telegram.svg";
 import facebook from "./images/facebook.svg";
@@ -58,11 +57,6 @@ const InstructionsComponent = () => (
             <div class="scanContentContainer">
               <div>
                 <p>Scan this code in-app to verify a device</p>
-              </div>
-            </div>
-            <div class="scanFrameContainer">
-              <div>
-                <img src={frame} alt="" />
               </div>
             </div>
           </div>
