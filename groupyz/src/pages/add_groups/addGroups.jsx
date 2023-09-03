@@ -2,7 +2,7 @@ import "./styles/addGroups.css";
 import TextField from "@mui/material/TextField";
 import Grid from "@mui/material/Grid";
 import Search from "./images/search.svg";
-import GroupsList from "./data/groupsList.jsx";
+import GroupsList from "./components/groupsList.jsx";
 import { useState } from "react";
 import Button_c from "../../components/global/Button_c";
 import arrow from "./images/arrow.svg";
