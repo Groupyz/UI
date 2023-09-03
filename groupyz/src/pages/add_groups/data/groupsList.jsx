@@ -1,13 +1,24 @@
 import "../styles/addGroups.css";
-import data from "./dummyData.json";
 import Checkbox from "../../../components/global/Checkbox";
+import axios from "axios";
+import { useState, useEffect } from "react";
 
-const groupsList = ({
+const URL = "http://localhost:5051/groups/1";
+
+const GroupsList = ({
   input,
   selectedGroups,
   setSelectedGroups,
   getDataFromGroupsList,
 }) => {
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    axios.get(URL).then((response) => {
+      setData(response.data["groups"]);
+      console.log(response.data["groups"]);
+    });
+  }, []);
+
   const filteredData = data.filter((el) => {
     //if no input the return the original
     if (input === "") {
@@ -42,4 +53,4 @@ const groupsList = ({
   );
 };
 
-export default groupsList;
+export default GroupsList;
