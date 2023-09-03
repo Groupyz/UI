@@ -160,7 +160,7 @@ const NewMessage = () => {
                     <img src={Arrows} alt="arrows" />
                   </div>
                   <div class="selectRepeat">
-                    <FormControl fullWidth disabled>
+                    <FormControl fullWidth>
                       <InputLabel id="repeat">repeat</InputLabel>
                       <Select placeholder="repeat">
                         <MenuItem value="once">Once</MenuItem>
@@ -171,7 +171,7 @@ const NewMessage = () => {
                     </FormControl>
                   </div>
                   <label>
-                    <input type="checkbox" disabled />
+                    <input type="checkbox" />
                     Everyday
                   </label>
                 </div>
