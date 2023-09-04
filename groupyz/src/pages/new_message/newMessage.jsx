@@ -62,7 +62,6 @@ const NewMessage = () => {
       message_data: messageData,
       message_title: messageTitle,
     });
-    console.log(data);
     const config = {
       headers: { "Content-Type": "application/json" },
     };
