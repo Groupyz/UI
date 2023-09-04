@@ -73,6 +73,7 @@ const NewMessage = () => {
         });
       }
     });
+    window.location.href = "./dashboard";
   };
 
   const editorModules = {
