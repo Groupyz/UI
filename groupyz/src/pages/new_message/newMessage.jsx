@@ -57,7 +57,7 @@ const NewMessage = () => {
     const data = JSON.stringify({
       user_id: 1,
       repeat: "once",
-      dest_groups_id: destGroupsId,
+      group_ids: destGroupsId,
       time_to_send: timeToSend,
       message_data: messageData,
       message_title: messageTitle,
