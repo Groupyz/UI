@@ -7,7 +7,7 @@ dashboard .dashboardCompenent {
 dashboard .dashboardCompenent .row {
     display: grid;
     padding-left: 24%;
-    padding-top: 4%;
+    padding-top: 1%;
 }
 
 dashboard .dashboardCompenent .column {
@@ -105,9 +105,8 @@ dashboard .dashboardCompenent .column {
 }
 
 .messageTitle {
-    font-size: 16px;
+    font-size: 30px;
     font-weight: 600;
-    margin-top: -14.5%;
     padding-left: 2%;
 }
 
