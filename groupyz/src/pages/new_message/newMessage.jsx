@@ -164,7 +164,6 @@ const NewMessage = () => {
                   <div class="selectRepeat">
                     <FormControl fullWidth>
                       <InputLabel id="repeat">repeat</InputLabel>
-                      {/* <Select placeholder="repeat"> */}
                       <Select
                         labelId="repeat"
                         value={repeat}
